@@ -1,5 +1,8 @@
-FROM 
-GET
-COPY . /app
-WORDIR /app
-COMMAND ["java", "jar" , "-app.war"]
+#sample Docerfile
+
+FROM ubuntu
+MAINTAINER morashish15@gmail.com
+
+RUN apt-get update
+RUN apt-get install -y nginx
+CMD ['echo','mage created']
